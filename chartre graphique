@@ -1,0 +1,38 @@
+/* Couleurs */
+:root {
+    --primary-green: #4CAF50;
+    --light-green: #81C784;
+    --sky-blue: #64B5F6;
+    --white: #FFFFFF;
+    --light-grey: #F5F5F5;
+    --dark-grey: #424242;
+    --yellow: #FFEB3B;
+}
+
+/* Typographies */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--dark-grey);
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--primary-green);
+}
+
+/* Boutons */
+button {
+    background-color: var(--primary-green);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    background-color: var(--light-green);
+}
