@@ -40,3 +40,38 @@ Chauffeur "1" -- "*" Covoiturage : propose
 Chauffeur "1" -- "*" Vehicule : possède
 
 @enduml
+
+@startuml
+
+' Diagramme de Cas d'Utilisation
+actor Visiteur
+actor Utilisateur
+actor Employe
+actor Administrateur
+
+Visiteur --> (Consulter covoiturages)
+Visiteur --> (Créer un compte)
+Utilisateur --> (Réserver un covoiturage)
+Utilisateur --> (Proposer un covoiturage)
+Employe --> (Valider les avis)
+Administrateur --> (Gérer utilisateurs et employés)
+Administrateur --> (Voir statistiques)
+
+@enduml
+
+@startuml
+
+' Diagramme de Séquence: Réservation d'un covoiturage
+participant Utilisateur
+participant "Système" as System
+participant Chauffeur
+
+Utilisateur -> System: Recherche un trajet
+System -> Chauffeur: Vérifie disponibilité
+Chauffeur -> System: Retourne disponibilité
+System -> Utilisateur: Affiche trajets disponibles
+Utilisateur -> System: Sélectionne un trajet
+System -> Chauffeur: Notifie réservation
+System -> Utilisateur: Confirme réservation
+
+@enduml
