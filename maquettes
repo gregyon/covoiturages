@@ -6,9 +6,10 @@
     <title>Éco-Covoiturage</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-green-50">
-    <header class="bg-green-700 text-white p-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold">Éco-Covoiturage</h1>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-green-600 p-4 text-white flex justify-between items-center">
+        <h1 class="text-xl font-bold">Éco-Covoiturage</h1>
         <nav>
             <ul class="flex space-x-4">
                 <li><a href="#" class="hover:underline">Accueil</a></li>
@@ -19,23 +20,56 @@
         </nav>
     </header>
     
-    <main class="p-6 max-w-4xl mx-auto">
-        <section class="mb-6">
-            <h2 class="text-xl font-semibold text-green-900">Rechercher un itinéraire</h2>
-            <form class="bg-white p-4 rounded-lg shadow">
-                <label class="block mb-2">Adresse de départ</label>
-                <input type="text" class="w-full p-2 border rounded mb-4" placeholder="Ville de départ">
-                <label class="block mb-2">Adresse d'arrivée</label>
-                <input type="text" class="w-full p-2 border rounded mb-4" placeholder="Ville d'arrivée">
-                <label class="block mb-2">Date</label>
-                <input type="date" class="w-full p-2 border rounded mb-4">
-                <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500">Rechercher</button>
-            </form>
-        </section>
-    </main>
+    <!-- Hero Section -->
+    <section class="text-center py-10 px-4">
+        <h2 class="text-3xl font-bold text-green-700">Trouver un covoiturage écologique !</h2>
+        <p class="text-gray-700 mt-2">Rejoignez notre communauté et voyagez de manière plus responsable.</p>
+        <div class="mt-6">
+            <input type="text" placeholder="Départ" class="p-2 border rounded-lg mr-2">
+            <input type="text" placeholder="Arrivée" class="p-2 border rounded-lg mr-2">
+            <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">Rechercher</button>
+        </div>
+    </section>
     
-    <footer class="bg-green-700 text-white text-center p-4 mt-10">
-        <p>Contact : contact@eco-covoiturage.com</p>
+    <!-- Wireframes Bureau -->
+    <section class="py-10 px-4">
+        <h2 class="text-2xl font-bold text-green-700 text-center">Wireframes Bureau</h2>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+            <div class="bg-white p-4 shadow-lg rounded-lg">Maquette Bureau 1</div>
+            <div class="bg-white p-4 shadow-lg rounded-lg">Maquette Bureau 2</div>
+        </div>
+    </section>
+    
+    <!-- Mockups Bureau -->
+    <section class="py-10 px-4">
+        <h2 class="text-2xl font-bold text-green-700 text-center">Mockups Bureau</h2>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+            <img src="mockup_bureau_1.png" alt="Mockup Bureau 1" class="bg-white p-4 shadow-lg rounded-lg">
+            <img src="mockup_bureau_2.png" alt="Mockup Bureau 2" class="bg-white p-4 shadow-lg rounded-lg">
+        </div>
+    </section>
+    
+    <!-- Wireframes Mobile -->
+    <section class="py-10 px-4">
+        <h2 class="text-2xl font-bold text-green-700 text-center">Wireframes Mobile</h2>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+            <div class="bg-white p-4 shadow-lg rounded-lg">Maquette Mobile 1</div>
+            <div class="bg-white p-4 shadow-lg rounded-lg">Maquette Mobile 2</div>
+        </div>
+    </section>
+    
+    <!-- Mockups Mobile -->
+    <section class="py-10 px-4">
+        <h2 class="text-2xl font-bold text-green-700 text-center">Mockups Mobile</h2>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+            <img src="mockup_mobile_1.png" alt="Mockup Mobile 1" class="bg-white p-4 shadow-lg rounded-lg">
+            <img src="mockup_mobile_2.png" alt="Mockup Mobile 2" class="bg-white p-4 shadow-lg rounded-lg">
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white p-4 text-center mt-10">
+        <p>Contact : contact@ecocovoiturage.com</p>
         <p><a href="#" class="underline">Mentions légales</a></p>
     </footer>
 </body>
