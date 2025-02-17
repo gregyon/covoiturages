@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éco-Covoiturage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50">
+    <header class="bg-green-700 text-white p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Éco-Covoiturage</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:underline">Accueil</a></li>
+                <li><a href="#" class="hover:underline">Covoiturages</a></li>
+                <li><a href="#" class="hover:underline">Connexion</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="p-6 max-w-4xl mx-auto">
+        <section class="mb-6">
+            <h2 class="text-xl font-semibold text-green-900">Rechercher un itinéraire</h2>
+            <form class="bg-white p-4 rounded-lg shadow">
+                <label class="block mb-2">Adresse de départ</label>
+                <input type="text" class="w-full p-2 border rounded mb-4" placeholder="Ville de départ">
+                <label class="block mb-2">Adresse d'arrivée</label>
+                <input type="text" class="w-full p-2 border rounded mb-4" placeholder="Ville d'arrivée">
+                <label class="block mb-2">Date</label>
+                <input type="date" class="w-full p-2 border rounded mb-4">
+                <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500">Rechercher</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="bg-green-700 text-white text-center p-4 mt-10">
+        <p>Contact : contact@eco-covoiturage.com</p>
+        <p><a href="#" class="underline">Mentions légales</a></p>
+    </footer>
+</body>
+</html>
