@@ -1,0 +1,42 @@
+@startuml
+
+' Diagramme de Classe
+class Utilisateur {
+  +id: int
+  +pseudo: string
+  +email: string
+  +motDePasse: string
+  +credit: int
+}
+
+class Chauffeur extends Utilisateur {
+  +immatriculation: string
+  +vehicules: List<Vehicule>
+  +preferences: List<string>
+}
+
+class Passager extends Utilisateur {}
+
+class Vehicule {
+  +id: int
+  +modele: string
+  +marque: string
+  +energie: string
+}
+
+class Covoiturage {
+  +id: int
+  +chauffeur: Chauffeur
+  +depart: string
+  +arrivee: string
+  +dateHeure: DateTime
+  +placesDisponibles: int
+  +prix: float
+  +ecologique: boolean
+}
+
+Utilisateur "1" -- "*" Covoiturage : participe
+Chauffeur "1" -- "*" Covoiturage : propose
+Chauffeur "1" -- "*" Vehicule : possède
+
+@enduml
